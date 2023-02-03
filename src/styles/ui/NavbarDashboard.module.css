@@ -1,0 +1,21 @@
+.navDashboard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 62px;
+  border: 1px solid lightgrey;
+  padding: 0 40px;
+}
+
+.navLogo {
+  font-weight: bold;
+}
+
+.navUser {
+  display: flex;
+  gap: 0.625rem;
+}
+
+.navUser span:last-child {
+  cursor: pointer;
+}
