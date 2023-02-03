@@ -16,7 +16,7 @@ docker-compose up -d
 
 Renombrar el archivo **.env.template** a **.env**
 
-- MongoDB URL Local:
+- DATABASE_URL
 
 ```
 postgresql://USER:PASSWORD@HOST:PORT/DATABASE
