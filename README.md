@@ -1,4 +1,4 @@
-# Base NextJs 13 - TypeScript + Backend + PostgreSQL
+# Base NextJs 13 + TypeScript + Backend + PostgreSQL
 
 Base Application
 
