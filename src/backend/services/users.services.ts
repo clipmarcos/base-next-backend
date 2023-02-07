@@ -1,7 +1,7 @@
 import bcrypt from 'bcryptjs'
 import { NextApiRequest, NextApiResponse } from 'next'
 import { PrismaClient } from '@prisma/client'
-import { jwt } from '@/utils'
+import { jwt, validations } from '@/utils'
 import { DataUser } from '@/interfaces/User'
 const prisma = new PrismaClient()
 
@@ -12,6 +12,10 @@ class UserServices {
     // Todo: validate the email valido
 
     // verify that the email exists
+    if (!validations.isValidEmail(email)) {
+      return res.status(400).json({ message: `The email: ${email} is invalid` })
+    }
+
     await prisma.$connect()
     const user = await prisma.user.findUnique({
       where: {
@@ -52,6 +56,7 @@ class UserServices {
       return res.status(200).json({
         token: token,
         user: {
+          id,
           email: newEmail,
           name: newName,
           role: newRole,

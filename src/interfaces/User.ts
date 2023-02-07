@@ -11,6 +11,7 @@ export interface IUser {
 }
 
 interface User {
+  id: number
   email: string
   name: string | null
   role: string
@@ -18,7 +19,7 @@ interface User {
 
 export type DataUser = {
   message?: string
-  token?: string
+  token?: string | number
   user?: User
 }
 
