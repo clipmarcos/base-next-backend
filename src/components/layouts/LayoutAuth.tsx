@@ -11,7 +11,10 @@ export function LayoutAuth({ children }: Props) {
       <Head>
         <title>Login | App</title>
       </Head>
-      <main className={styles.container}>{children}</main>
+
+      <main className={styles.main}>
+        <div className={styles.container}>{children}</div>
+      </main>
     </>
   )
 }

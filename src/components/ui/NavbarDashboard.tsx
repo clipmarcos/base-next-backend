@@ -7,7 +7,7 @@ export default function NavbarDashboard() {
       <div className={styles.navLogo}>LOGO</div>
       <div className={styles.navUser}>
         <span>
-          Welcome: <strong>Marcos Ortiz</strong>
+          Welcome: <strong className={styles.userText}>Marcos Ortiz</strong>
         </span>
         <span>
           | <Link href='/auth/login'>Logout</Link>

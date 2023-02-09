@@ -5,6 +5,7 @@
   height: 62px;
   border: 1px solid lightgrey;
   padding: 0 40px;
+  background-color: var(--color-1);
 }
 
 .navLogo {
@@ -18,4 +19,7 @@
 
 .navUser span:last-child {
   cursor: pointer;
+}
+.userText {
+  color: var(--color-primary);
 }

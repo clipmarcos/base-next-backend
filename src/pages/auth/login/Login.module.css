@@ -1,0 +1,71 @@
+.boxForm {
+  background-color: var(--color-1);
+  position: relative;
+  padding: 3em 2.5em;
+  border-radius: 10px;
+  width: 100%;
+}
+.boxForm h2 {
+  color: #4d4d4d;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.inputBox label {
+  color: #4d4d4d;
+  font-weight: 400;
+}
+.inputBox input[type='text'],
+.inputBox input[type='password'] {
+  width: 100%;
+  padding: 9px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border-radius: 7px;
+  border: 1px solid #b9b9b9;
+  color: #5e5e5e;
+  box-sizing: border-box;
+  background-color: white;
+}
+.boxForm button {
+  border: none;
+  padding: 0.6em;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  margin-top: 10px;
+  border-radius: 7px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.boxForm button:hover {
+  opacity: 0.9;
+}
+
+.signupNow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.signupNow p {
+  margin: 0;
+}
+
+.signupNow a {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+.signupNow a:hover {
+  text-decoration: underline;
+}

@@ -1,14 +1,13 @@
 :root {
-  --bg-black-900: #f2f2fc;
-  --bg-black-100: #fdf9ff;
-  --bg-black-50: #e8dfec;
-  --text-black-900: #302e4d;
-  --text-black-700: #504e70;
+  --color-primary: #883434;
+  --color-1: #f1f7fe;
+  --color-2: #dde5f4;
+  --font: 'Nunito Sans', sans-serif;
 }
 
 html {
   box-sizing: border-box;
-  /* font-family: var(--font); */
+  font-family: var(--font);
   font-size: 16px;
 }
 
@@ -27,7 +26,6 @@ body {
   padding: 0;
   overflow-x: hidden;
   line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
 }
 
 ul {
