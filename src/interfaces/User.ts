@@ -4,23 +4,20 @@ export interface IUser {
   id: number
   email: string
   name?: string | null
-  password: string
   role: string
-  createdAt: Date
-  updateAt: Date
 }
 
-interface User {
-  id: number
-  email: string
-  name: string | null
-  role: string
-}
+// export interface User {
+//   id: number
+//   email: string
+//   name: string | null
+//   role: string
+// }
 
 export type DataUser = {
   message?: string
-  token?: string | number
-  user?: User
+  token?: string
+  user?: IUser
 }
 
 //? fake data to populate user table

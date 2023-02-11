@@ -19,8 +19,15 @@
   color: #4d4d4d;
   font-weight: 400;
 }
+.inputBox span {
+  color: #ff4d4f;
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 2px;
+}
 .inputBox input[type='text'],
-.inputBox input[type='password'] {
+.inputBox input[type='password'],
+.inputBox input[type='email'] {
   width: 100%;
   padding: 9px;
   box-sizing: border-box;
